@@ -1,9 +1,10 @@
 import os 
+from config import api_key
 
 from langchain_core.prompts import ChatGroq
 
 
-api_key = "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"
+
 
 os.environ("GROQ_API_KET") = api_key
 

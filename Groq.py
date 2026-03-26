@@ -3,6 +3,7 @@ import sys
 import speech_recognition as sr
 from gtts import gTTS
 import pygame
+from config import api_key
 from langchain_groq import ChatGroq 
 from elevenlabs import ElevenLabs
 
@@ -14,11 +15,11 @@ from elevenlabs import ElevenLabs
 # CONFIG INICIAL
 # ===============================
 
-api_key = "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"
+
 os.environ["GROQ_API_KEY"] = api_key
 
-client = ElevenLabs(api_key="fccce4e1cb194268dfa6ddacfdfcebd94b49c54860330c9317bca985cacedc66")
-AGENT_ID="5301kb3x3eszeeztar588y9t5hq5"
+client = ElevenLabs(api_key="")
+AGENT_ID=""
 
 chat = ChatGroq(model="llama-3.1-8b-instant")
 

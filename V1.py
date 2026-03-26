@@ -1,3 +1,6 @@
+
+
+
 def resposta_do_bot(mensagens):
     return 'resposta_do_bot'
 
